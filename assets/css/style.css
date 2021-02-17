@@ -11,7 +11,7 @@
 
 ### Neutral
 
-- White (Pricing Component Background): hsl (0, 0%, 100%)
+- White (Pricing Component Background): hsl(0, 0%, 100%)
 - Very Pale Blue (Main Background): hsl(230, 100%, 99%)
 - Light Grayish Blue (Empty Slider Bar): hsl(224, 65%, 95%)
 - Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%)
@@ -27,45 +27,135 @@
 */
 
 body {
-    background-image: url(/assets/images/bg-pattern.svg);
-    background-repeat: no-repeat;
-    background-color: hsl(230, 100%, 99%);
-    color: hsl(225, 20%, 60%);
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
+	background-image: url(/assets/images/bg-pattern.svg);
+	background-repeat: no-repeat;
+	background-color: hsl(230, 100%, 99%);
+	color: hsl(225, 20%, 60%);
+	font-family: 'Manrope', sans-serif;
+	font-size: 15px;
 }
 
 /* INTRO */
 .intro {
-    background-image: url(/assets/images/pattern-circles.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-flow: column nowrap;
-    margin: auto;
-    align-items: center;
-    margin: 50px 0;
-    padding: 30px;
+	background-image: url(/assets/images/pattern-circles.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: auto;
+	align-items: center;
+	margin: 50px 0 25px;
+	padding: 30px;
 }
 
 .intro-header {
-    color: hsl(227, 35%, 25%);
-    font-size: 18px;
-    margin: 6px 0;
+	color: hsl(227, 35%, 25%);
+	font-size: 18px;
+	margin: 6px 0;
 }
 
 .intro-text {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.6rem;
-    width: 180px;
-    margin: 8px 0;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.6rem;
+	width: 180px;
+	margin: 8px 0;
 }
 
+/* MAIN */
+.main-section {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin: auto;
+}
+
+/* BOARD */
+.traffic-board {
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 300px;
+	height: 400px;
+	margin: 1%;
+}
+
+/* UP BOARD */
+.traffic {
+	width: auto;
+	border-bottom: hsl(224, 65%, 95%) 1px solid;
+	padding: 30px 10px;
+	margin: 0 0 30px;
+}
+
+.traffic-pageview {
+	font-weight: 600;
+	font-size: 14px;
+	padding: 5px;
+	margin: 5px;
+}
+
+/* SLIDER */
+.traffic-slider {
+	width: 95%;
+	padding: 8px;
+	margin: 8px;
+}
+
+.traffic-range-button {
+	border-radius: 10px;
+}
+
+.traffic-price {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	padding: 3px;
+	margin: 5px;
+	height: min-content;
+}
+
+.traffic-price h1 {
+	display: inline;
+	color: hsl(227, 35%, 25%);
+	font-weight: 800;
+	font-size: 30px;
+	padding: 0 8px;
+	margin: 3px 0;
+}
+
+.traffic-price p {
+	display: inline;
+}
+
+.traffic-billing {
+	display: flex;
+	flex-flow: row nowrap;
+	font-size: 12px;
+	font-weight: 400;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.traffic-billing-discount {
+	background-color: hsl(14, 92%, 95%);
+	color: hsl(15, 100%, 70%);
+	font-weight: 600;
+	font-size: 10px;
+	height: fit-content;
+	border-radius: 10px;
+	padding: 5px 8px;
+	margin: 0 3px;
+}
+
+/* DOWN BOARD */
 .attribution {
-    font-size: 11px; text-align: center;
+	font-size: 11px; text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
 }
