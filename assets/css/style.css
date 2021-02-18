@@ -105,7 +105,28 @@ body {
 }
 
 .traffic-range-button {
-	border-radius: 10px;
+	-webkit-appearance: none;
+	appearance: none;
+	background: linear-gradient(90deg, hsl(174, 77%, 80%) 60%, hsl(224, 65%, 95%) 60%);
+	width: 100%;
+	height: 8px;
+	border-radius: 12px;
+	outline: none;
+	transition: 0.2s;
+}
+
+.traffic-range-button:hover{
+	opacity: 0.8;
+}
+
+.traffic-range-button::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	background: hsl(174, 86%, 45%);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .traffic-price {
