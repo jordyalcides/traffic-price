@@ -90,6 +90,7 @@ body {
 	margin: 0 0 30px;
 }
 
+/* PAGEVIEW */
 .traffic-pageview {
 	font-weight: 600;
 	font-size: 14px;
@@ -152,6 +153,7 @@ body {
 	display: inline;
 }
 
+/* BILLING PLAN */
 .traffic-billing {
 	display: flex;
 	flex-flow: row nowrap;
@@ -173,8 +175,39 @@ body {
 }
 
 /* DOWN BOARD */
+.cta p {
+	font-size: 12px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.cta p i {
+	color: hsl(174, 86%, 45%);
+	font-size: 8px;
+	padding: 0 5px;
+	margin: 0 5px;
+}
+
+/* START TRIAL BUTTON */
+.cta-start-trial {
+	-webkit-appearance: none;
+	appearance: none;
+	background: hsl(227, 35%, 25%);
+	color: hsl(226, 100%, 87%);
+	font-size: 12px;
+	font-weight: 600;
+	width: 180px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+}
+
 .attribution {
-	font-size: 11px; text-align: center;
+	display: none;
+	font-size: 11px;
+	text-align: center;
 }
 
 .attribution a {
