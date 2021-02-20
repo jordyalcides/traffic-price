@@ -4,19 +4,19 @@
 // - 500k pageviews / $24 per month
 // - 1M pageviews / $36 per month
 
-let rangeButton = document.getElementById("traffic-button")
+let trafficButton = document.getElementById("traffic-button")
 let viewsValue = document.getElementById("views")
 
-viewsValue.innerHTML = rangeButton.value
+viewsValue.innerHTML = trafficButton.value
 
-rangeButton.oninput = function() {
+trafficButton.oninput = function() {
     viewsValue.innerHTML = this.value
 }
 
-rangeButton.addEventListener("touchmove", () => {
-    rangeButton.style.background = 'linear-gradient(90deg, hsl(174, 77%, 80%)' + rangeButton.value + '%, hsl(224, 65%, 95%)' + rangeButton.value + '%)'
+trafficButton.addEventListener("touchmove", () => {
+    trafficButton.style.background = 'linear-gradient(90deg, hsl(174, 77%, 80%)' + trafficButton.value + '%, hsl(224, 65%, 95%)' + trafficButton.value + '%)'
 })
 
-rangeButton.addEventListener("mousemove", () => {
-    rangeButton.style.background = 'linear-gradient(90deg, hsl(174, 77%, 80%)' + rangeButton.value + '%, hsl(224, 65%, 95%)' + rangeButton.value + '%)'
+trafficButton.addEventListener("mousemove", () => {
+    trafficButton.style.background = 'linear-gradient(90deg, hsl(174, 77%, 80%)' + trafficButton.value + '%, hsl(224, 65%, 95%)' + trafficButton.value + '%)'
 })

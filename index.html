@@ -44,17 +44,29 @@
 							id="traffic-button"
 							data-price-input='{
 								"1": "10K",
-								"2": "50K",
-								"3": "100K",
-								"4": "500K",
-								"5": "1M"
+								"25": "50K",
+								"50": "100K",
+								"75": "500K",
+								"100": "1M"
 							}'
 							min="1"
-							max="5"
-							value="3"/>
+							max="100"
+							value="50"/>
 					</div>
 					<div class="traffic-price">
-						<h1>$16.00</h1>
+						<span class="traffic-price-item">
+							$<span
+								class="traffic-price-amount"
+								data-price-output='{
+									"1": "8",
+									"25": "12",
+									"50": "16",
+									"75": "24",
+									"100": "36",
+								}'>
+								16.00
+							</span>
+						</span>
 						<p>
 							/ month
 						</p>
@@ -64,7 +76,7 @@
 					<p class="traffic-billing-monthly">
 						Monthly Billing
 					</p>
-					<label for="" class="switch"><input type="checkbox" name="" id=""><span class="slider"></span></label>
+					<label class="traffic-billing-switch"><input type="checkbox"><span class="traffic-billing-toggle"></span></label>
 					<p class="traffic-billing-yearly">Yearly Billing</p>
 					<p class="traffic-billing-discount">-25%</p>
 				</div>
