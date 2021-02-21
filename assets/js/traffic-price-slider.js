@@ -5,16 +5,18 @@
 // - 1M pageviews / $36 per month
 
 const valueToViews = [ "10K", "50K", "100K", "500K", "1M"]
-const valueToPrice = [ "8.00", "12.00", "16.00", "24.00", "36.00"]
+const valueToPrice = [ 8, 12, 16, 24, 36]
 
 let viewsValue = document.getElementById("views")
 let priceAmount = document.getElementById("price-amount")
+const yearlyDiscount = document.getElementById("year-plan-discount")
 const trafficButton = document.getElementById("traffic-button")
 
-trafficButton.oninput = function () {
-    const index = Math.ceil(this.value/25)
+trafficButton.oninput = function() {
+    let index = Math.ceil(this.value/25)
     viewsValue.innerHTML = valueToViews[index]
-    priceAmount.innerHTML = valueToPrice[index]
+    if(yearlyDiscount.checked == true) priceAmount.innerHTML = valueToPrice[index]*0.75
+    else priceAmount.innerHTML = valueToPrice[index]
 }
 
 trafficButton.addEventListener("touchmove", () => {
@@ -25,3 +27,7 @@ trafficButton.addEventListener("mousemove", () => {
     trafficButton.style.background = 'linear-gradient(90deg, hsl(174, 77%, 80%)' + trafficButton.value + '%, hsl(224, 65%, 95%)' + trafficButton.value + '%)'
 })
 
+yearlyDiscount.addEventListener("change", () => {
+    if(yearlyDiscount.checked == true) priceAmount.innerHTML = valueToPrice[Math.ceil(trafficButton.value/25)]*0.75
+    else priceAmount.innerHTML = valueToPrice[Math.ceil(trafficButton.value/25)]
+})
