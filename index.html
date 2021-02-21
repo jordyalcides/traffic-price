@@ -41,31 +41,13 @@
 							name="Traffic"
 							class="traffic-range-button"
 							id="traffic-button"
-							data-price-input='{
-								"1": "10K",
-								"25": "50K",
-								"50": "100K",
-								"75": "500K",
-								"100": "1M"
-							}'
 							min="0"
 							max="100"
 							value="50"/>
 					</div>
 					<div class="traffic-price">
 						<span class="traffic-price-item">
-							$<span
-								class="traffic-price-amount"
-								id="price-amount"
-								data-price-output='{
-									"1": "8",
-									"25": "12",
-									"50": "16",
-									"75": "24",
-									"100": "36",
-								}'>
-								16
-							</span>.00
+							$<span class="traffic-price-amount" id="price-amount">16</span>.00
 						</span>
 						<p>
 							/ month
@@ -77,12 +59,7 @@
 						Monthly Billing
 					</p>
 					<label class="traffic-billing-switch">
-						<input
-							type="checkbox"
-							id="year-plan-discount">
-							<span 
-								class="traffic-billing-toggle">
-							</span>
+						<input type="checkbox" id="year-plan-discount"><span class="traffic-billing-toggle"></span>
 					</label>
 					<p class="traffic-billing-yearly">Yearly Billing</p>
 					<p class="traffic-billing-discount">-25%</p>
@@ -98,11 +75,12 @@
 		</div>
 	</main>
 
-
-	<div class="attribution">
-		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-		and Coded by <a href="#">Jordy Alcides</a>.
-	</div>
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			and Coded by <a href="#">Jordy Alcides</a>.
+		</div>
+	</footer>
 </body>
 <script src="/assets/js/traffic-price-slider.js"></script>
 </html>

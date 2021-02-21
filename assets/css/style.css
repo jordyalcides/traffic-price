@@ -118,10 +118,20 @@ body {
 }
 
 .traffic-range-button:hover{
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 .traffic-range-button::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	background: hsl(174, 86%, 45%);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.traffic-range-button::-moz-range-thumb{
 	-webkit-appearance: none;
 	appearance: none;
 	background: hsl(174, 86%, 45%);
@@ -190,6 +200,10 @@ body {
 	transition: 0.4s;
 }
 
+.traffic-billing-toggle:hover {
+	background: hsl(174, 77%, 80%);
+}
+
 .traffic-billing-toggle:before {
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 50%;
@@ -216,6 +230,7 @@ input:checked + .traffic-billing-toggle::before {
 	-ms-transform: translateX(18px);
   	transform: translateX(18px);
 }
+
 
 .traffic-billing-discount {
 	background-color: hsl(14, 92%, 95%);
@@ -258,14 +273,25 @@ input:checked + .traffic-billing-toggle::before {
 	height: 40px;
 	border-radius: 20px;
 	border: none;
+	cursor: pointer;
+	transition: 0.2s;
 	padding: 10px;
 	margin: 25px 10px 10px;
 }
 
+.cta-start-trial:hover {
+	color: hsl(0, 0%, 100%);
+}
+
 .attribution {
-	display: none;
-	font-size: 11px;
+	position: relative;
+	bottom: 0;
+	left: auto;
+	right: auto;
 	text-align: center;
+	font-size: 11px;
+	padding: 5px;
+	margin: 20px 5px 5px;
 }
 
 .attribution a {
