@@ -2,79 +2,78 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-	<title>Frontend Mentor | Interactive pricing component</title>
-	<link rel="stylesheet" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="./assets/css/normalize.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="stylesheet" href="./assets/css/all.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap">
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap">
 </head>
 
 <body>
 
-	<div class="intro">
-		<h1 class="intro-header">
-			Simple, traffic-based pricing
-		</h1>
-		<p class="intro-text">
-			Sign-up for our 30-day trial.
-			No credit card required.
-		</p>
-	</div>
-	<main class="main-section">
-		<div class="traffic-board">
-			<div class="traffic">
-				<div class="traffic-pricing">
-					<div class="traffic-pageview">
-						<p><span id="views">100K</span> PAGEVIEWS</p>
-					</div>
-					<div class="traffic-slider">
-						<input type="range" name="Traffic" class="traffic-range-button" id="traffic-button" min="0"
-							max="100" value="50" />
-					</div>
-					<div class="traffic-price">
-						<span class="traffic-price-item">
+    <div class="intro">
+        <h1 class="intro-header">
+            Simple, traffic-based pricing
+        </h1>
+        <p class="intro-text">
+            Sign-up for our 30-day trial. No credit card required.
+        </p>
+    </div>
+    <main class="main-section">
+        <div class="traffic-board">
+            <div class="traffic">
+                <div class="traffic-pricing">
+                    <div class="traffic-pageview">
+                        <p><span id="views">100K</span> PAGEVIEWS</p>
+                    </div>
+                    <div class="traffic-slider">
+                        <input type="range" name="Traffic" class="traffic-range-button" id="traffic-button" min="0" max="100" value="50" />
+                    </div>
+                    <div class="traffic-price">
+                        <span class="traffic-price-item">
 							$<span class="traffic-price-amount" id="price-amount">16</span>.00
-						</span>
-						<p>
-							/ month
-						</p>
-					</div>
-				</div>
-				<div class="traffic-billing">
-					<p class="traffic-billing-monthly">
-						Monthly Billing
-					</p>
-					<label class="traffic-billing-switch">
+                        </span>
+                        <p>
+                            / month
+                        </p>
+                    </div>
+                </div>
+                <div class="traffic-billing">
+                    <p class="traffic-billing-monthly">
+                        Monthly Billing
+                    </p>
+                    <label class="traffic-billing-switch">
 						<input type="checkbox" id="year-plan-discount"><span class="traffic-billing-toggle"></span>
 					</label>
-					<p class="traffic-billing-yearly">Yearly Billing</p>
-					<p class="traffic-billing-discount">-25%</p>
-				</div>
-			</div>
-			<div class="cta">
-				<p><i class="fas fa-check"></i> Unlimited websites</p>
-				<p><i class="fas fa-check"></i> 100% data ownership</p>
-				<p><i class="fas fa-check"></i> Email reports</p>
+                    <p class="traffic-billing-yearly">Yearly Billing</p>
+                    <p class="traffic-billing-discount">-25%</p>
+                </div>
+            </div>
+            <div class="cta">
+                <div class="cta-text">
+                    <p><i class="fas fa-check"></i> Unlimited websites</p>
+                    <p><i class="fas fa-check"></i> 100% data ownership</p>
+                    <p><i class="fas fa-check"></i> Email reports</p>
+                </div>
 
-				<input type="button" value="Start my trial" class="cta-start-trial">
-			</div>
-		</div>
-	</main>
+                <input type="button" value="Start my trial" class="cta-start-trial">
+            </div>
+        </div>
+    </main>
 
-	<footer>
-		<div class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-			and Coded by <a href="#">Jordy Alcides</a>.
-		</div>
-	</footer>
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. and Coded by <a href="https://github.com/jordyalcides">Jordy Alcides</a>.
+        </div>
+    </footer>
 </body>
 <script src="/assets/js/traffic-price-slider.js"></script>
 
