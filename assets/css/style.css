@@ -78,7 +78,7 @@ body {
 	text-align: center;
 	display: flex;
 	flex-flow: column nowrap;
-	width: 300px;
+	width: 335px;
 	height: auto;
 	margin: 1%;
 }
@@ -87,7 +87,7 @@ body {
 .traffic {
 	width: auto;
 	border-bottom: hsl(224, 65%, 95%) 1px solid;
-	padding: 30px 10px;
+	padding: 15px 10px 30px;
 	margin: 0 0 30px;
 }
 
@@ -95,6 +95,7 @@ body {
 .traffic-pageview {
 	font-weight: 600;
 	font-size: 14px;
+	letter-spacing: 2px;
 	padding: 5px;
 	margin: 5px;
 }
@@ -102,8 +103,8 @@ body {
 /* SLIDER */
 .traffic-slider {
 	width: 95%;
-	padding: 8px;
-	margin: 8px;
+	padding: 10px;
+	margin: 10px 10px 25px;
 }
 
 .traffic-range-button {
@@ -117,28 +118,39 @@ body {
 	transition: 0.2s;
 }
 
-.traffic-range-button:hover{
+.traffic-range-button:hover {
 	opacity: 0.6;
 }
 
-.traffic-range-button::-webkit-slider-thumb{
+.traffic-range-button::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	background: hsl(174, 86%, 45%);
-	width: 25px;
-	height: 25px;
+	background-image: url(/assets/images/icon-slider.svg);
+	background-color: hsl(174, 86%, 45%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	border-radius: 50%;
+	box-shadow: 0 10px 30px hsl(174, 86%, 55%);
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.traffic-range-button::-moz-range-thumb {
+	background-image: url(/assets/images/icon-slider.svg);
+	background-color: hsl(174, 86%, 45%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
-.traffic-range-button::-moz-range-thumb{
-	-webkit-appearance: none;
-	appearance: none;
-	background: hsl(174, 86%, 45%);
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	cursor: pointer;
+.traffic-range-button::-webkit-slider-thumb:active {
+	background-color: hsl(173, 89%, 40%);
 }
 
 .traffic-price {
@@ -146,8 +158,8 @@ body {
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: center;
-	padding: 3px;
-	margin: 5px;
+	padding: 5px;
+	margin: 15px;
 	height: min-content;
 }
 
@@ -171,7 +183,15 @@ body {
 	font-size: 12px;
 	font-weight: 400;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
+}
+
+.traffic-billing-monthly {
+	margin: 0 10px;
+}
+
+.traffic-billing-yearly {
+	margin: 0 10px;
 }
 
 .traffic-billing-switch {
