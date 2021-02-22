@@ -40,18 +40,23 @@ body {
 	background-image: url(/assets/images/pattern-circles.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
+	top: 60px;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 350px;
+	padding: 30px 0;
 	margin: auto;
-	align-items: center;
-	margin: 50px 0 25px;
-	padding: 30px;
+	/* align-items: center; */
+	/* margin: 50px 0 25px; */
 }
 
 .intro-header {
 	color: hsl(227, 35%, 25%);
 	font-size: 18px;
 	margin: 6px 0;
+	width: fit-content;
 }
 
 .intro-text {
@@ -67,7 +72,7 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
-	margin: auto;
+	margin: 80px auto;
 }
 
 /* BOARD */
